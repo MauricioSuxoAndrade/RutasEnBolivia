@@ -1,8 +1,8 @@
 export const MAP_STYLE = "./map_style.json";
 
 export const INITIAL_VIEW_STATE = {
-    longitude: -16.504,
-    latitude:  -68.131   ,
+    longitude: -68.1314,
+    latitude:  -16.5040,
     zoom: 13,
     pitch: 0,
     bearing: 0
