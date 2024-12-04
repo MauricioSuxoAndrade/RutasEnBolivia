@@ -50,12 +50,12 @@ function Map() {
         // Place end node
         if(info.rightButton || placeEnd) {
             if(e.layer?.id !== "selection-radius") {
-                ui.current.showSnack("Please select a point inside the radius.", "info");
+                ui.current.showSnack("Seleccione un punto dentro del radio", "info");
                 return;
             }
 
             if(loading) {
-                ui.current.showSnack("Please wait for all data to load.", "info");
+                ui.current.showSnack("Espere un momento", "info");
                 return;
             }
 
@@ -65,7 +65,7 @@ function Map() {
             
             const node = await getNearestNode(e.coordinate[1], e.coordinate[0]);
             if(!node) {
-                ui.current.showSnack("No path was found in the vicinity, please try another location.");
+                ui.current.showSnack("Error. No se encontraron rutas");
                 clearTimeout(loadingHandle);
                 setLoading(false);
                 return;
@@ -93,7 +93,7 @@ function Map() {
         // Fectch nearest node
         const node = await getNearestNode(e.coordinate[1], e.coordinate[0]);
         if(!node) {
-            ui.current.showSnack("No path was found in the vicinity, please try another location.");
+            ui.current.showSnack("Error. No se encontraron rutas");
             clearTimeout(loadingHandle);
             setLoading(false);
             return;

@@ -332,7 +332,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                     <div className="side slider-container">
                         <Typography id="speed-slider" >
-                            Animation speed
+                            Velocidad de animacion
                         </Typography>
                         <Slider min={1} max={30} value={settings.speed} onChange={e => { setSettings({...settings, speed: Number(e.target.value)}); }} className="slider" aria-labelledby="speed-slider" style={{ marginBottom: 1 }} />
                     </div>
@@ -344,7 +344,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
                         
                         <div>
                             <Typography id="start-fill-label" >
-                                Start node fill color
+                                Nodo inicial
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.startNodeFill)} onChange={v => {setColors({...colors, startNodeFill: rgbToArray(v)});}} aria-labelledby="start-fill-label" style={{ backgroundColor: "#404156" }} />
@@ -356,7 +356,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                         <div>
                             <Typography id="start-border-label" >
-                                Start node border color
+                                Borde del nodo inicial
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.startNodeBorder)} onChange={v => {setColors({...colors, startNodeBorder: rgbToArray(v)});}} aria-labelledby="start-border-label" style={{ backgroundColor: "#404156" }} />
@@ -368,7 +368,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                         <div>
                             <Typography id="end-fill-label" >
-                                End node fill color
+                                Nodo final
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.endNodeFill)} onChange={v => {setColors({...colors, endNodeFill: rgbToArray(v)});}} aria-labelledby="end-fill-label" style={{ backgroundColor: "#404156" }} />
@@ -380,7 +380,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                         <div>
                             <Typography id="end-border-label" >
-                                End node border color
+                                Borde del nodo final
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.endNodeBorder)} onChange={v => {setColors({...colors, endNodeBorder: rgbToArray(v)});}} aria-labelledby="end-border-label" style={{ backgroundColor: "#404156" }} />
@@ -392,7 +392,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                         <div>
                             <Typography id="path-label" >
-                                Path color
+                                Rutas
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.path)} onChange={v => {setColors({...colors, path: rgbToArray(v)});}} aria-labelledby="path-label" style={{ backgroundColor: "#404156" }} />
@@ -404,7 +404,7 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                         <div>
                             <Typography id="route-label" >
-                                Shortest route color
+                                Ruta mas corta
                             </Typography>
                             <div className="color-container">
                                 <MuiColorInput value={arrayToRgb(colors.route)} onChange={v => {setColors({...colors, route: rgbToArray(v)});}} aria-labelledby="route-label" style={{ backgroundColor: "#404156" }} />
@@ -417,26 +417,21 @@ const Interface = forwardRef(({ canStart, started, animationEnded, playbackOn, t
 
                     <div className="shortcuts-container">
                         <Typography style={{ color: "#A8AFB3", textTransform: "uppercase", fontSize: 14 }} >
-                            Shortcuts
+                            Atajos
                         </Typography>
 
                         <div className="shortcut">
-                            <p>SPACE</p>
-                            <p>Start/Stop animation</p>
+                            <p>Espacio</p>
+                            <p>Iniciar/Parar animacion</p>
                         </div>
                         <div className="shortcut">
                             <p>R</p>
-                            <p>Clear path</p>
+                            <p>Limpiar</p>
                         </div>
                         <div className="shortcut">
-                            <p>Arrows</p>
+                            <p>Flechas</p>
                             <p>Animacion</p>
                         </div>
-                        <Button onClick={() => {setActiveStep(0);setShowTutorial(true);}}
-                            variant="contained" style={{ backgroundColor: "#404156", color: "#fff" }}
-                        >
-                            Show tutorial
-                        </Button>
                     </div>
                 </div>
             </Drawer>
