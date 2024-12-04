@@ -19,15 +19,14 @@ export const INITIAL_COLORS = {
 
 export const LOCATIONS = [
     { name: "La Paz", latitude: -16.504, longitude: -68.131 },
-    { name: "El Alto", latitude: -16.500, longitude: -68.119 },
+    { name: "El Alto", latitude: -16.5036, longitude: -68.1630 },
     { name: "Viacha", latitude: -16.650, longitude: -68.297 },
-    { name: "Sta. Cruz", latitude: -17.783, longitude: -63.182 },
     { name: "Santa Cruz de la Sierra", latitude: -17.783, longitude: -63.182 },
     { name: "Cochabamba", latitude: -17.392, longitude: -66.156 },
-    { name: "Sucre", latitude: -19.033, longitude: -65.262 },
+    { name: "Sucre", latitude: -19.0481, longitude: -65.26 },
     { name: "Oruro", latitude: -17.983, longitude: -67.116 },
-    { name: "Potosí", latitude: -19.583, longitude: -65.756 },
+    { name: "Potosí", latitude: -19.5951, longitude: -65.7497 },
     { name: "Tarija", latitude: -21.533, longitude: -64.730 },
     { name: "Trinidad", latitude: -14.833, longitude: -64.900 },
-    { name: "Cobija", latitude: -11.033, longitude: -68.120 }
+    { name: "Cobija", latitude: -11.0244, longitude: -68.7548 }
 ];
