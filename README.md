@@ -1,4 +1,4 @@
-# 🚗 **PROGRAMA PARA ENCONTRAR LA RUTA MÁS CORTA EN EL MAPA DE LA PAZ** 🌍
+# 🚗 **PROGRAMA PARA ENCONTRAR LA RUTA MÁS CORTA EN EL MAPA DE BOLIVIA** 🌍
 
 Este programa está diseñado para calcular las rutas más cortas entre ciudades de Bolivia, utilizando **algoritmos de rutas más cortas** eficientes. Los algoritmos implementados son **A\*, Dijkstra, Greedy y Búsqueda Bidireccional**.
 
